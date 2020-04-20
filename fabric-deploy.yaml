@@ -1,0 +1,54 @@
+camel: 1.0.0
+name: default/jhu-covid-19-dataset
+title: JHU Covid-19 Dataset
+description: Contains COVID-19 datset from JHU
+fields:
+  - name: Province_State
+    type: string
+  - name: Country_Region
+    type: string
+  - name: Last_Update
+    type: string
+  - name: Lat
+    type: string
+  - name: Long_
+    type: string
+  - name: Confirmed
+    type: string
+  - name: Deaths
+    type: string
+  - name: Recovered
+    type: string
+  - name: Active
+    type: string
+  - name: FIPS
+    type: string  
+  - name: Incident_Rate
+    type: string
+  - name: People_Tested
+    type: string
+  - name: People_Hospitalized
+    type: string
+  - name: Mortality_Rate
+    type: string
+  - name: UID
+    type: string
+  - name: ISO3
+    type: string
+  - name: Testing_Rate
+    type: string
+  - name: Hospitalization_Rate
+    type: string
+connections:
+  default:
+    name: cortex/content
+    type: managedContent
+    query:
+      - name: key
+        value: covid-19.zip
+      - name: contentType
+        value: zip
+  environments:
+    - environment: PROD
+---
+# More fabric metadata
