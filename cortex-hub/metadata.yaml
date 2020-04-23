@@ -15,7 +15,8 @@ contributor:
 assets:
   - type: dataset
     name: JHU-COVID-19-Dataset
-    location: https://github.com/CSSEGISandData/COVID-19.git
+    location: https://github.com/lkrishna-cs/COVID-19/tree/master/csse_covid_19_data
   - type: certifai-scan
     name: Certifai Scan
     location: certifai/certifai.yaml
+gitUrl: https://github.com/lkrishna-cs/COVID-19
